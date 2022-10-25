@@ -67,16 +67,6 @@ const port = process.env.PORT || 8000;
 // Create Server
 const server = express();
 
-// Initiate Server
-/* const init = async () => {
-
-    await server.start();
-    console.log("Server up no porto: " + port);
-
-} */
-//Define routes
-//require('./routes/routes')(server);
-
 server.get('/', function (req, res) {
         var data = {
             msg: 'API Calculadora'
