@@ -1,6 +1,8 @@
 //Framework hapi.js
 const Hapi = require('hapi');
 
+const bourne = require("@hapi/bourne");
+
 // logic port and machine
 const host = 'localhost';
 const port = process.env.PORT || 8000; 
