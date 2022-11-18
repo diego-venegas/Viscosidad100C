@@ -234,10 +234,10 @@ server.get('/', function (req, res) {
     }
 );
 
-server.get('/visc100/:visc40/:vindx', function (req, res){
-    const visc40 = parseInt(req.params.visc40);
+server.get('/visc100/:vindx/:visc40', function (req, res){
     const vindx = parseInt(req.params.vindx);
-    const result = calcKv100(visc40, vindx);
+    const visc40 = parseInt(req.params.visc40);
+    const result = calcKv100(vindx, visc40);
     res.json({result: result});
 });
 
