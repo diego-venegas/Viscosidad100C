@@ -1,3 +1,21 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+	apiKey: "AIzaSyDf0Pdr2zZmfn254oCyWiuXI-GzHKEFx7A",
+	authDomain: "viscosidad100c.firebaseapp.com",
+	projectId: "viscosidad100c",
+	storageBucket: "viscosidad100c.appspot.com",
+	messagingSenderId: "687878570730",
+	appId: "1:687878570730:web:2e931203c4b40a53984d93"
+  };
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
 //Framework hapi.js
 const express = require('express');
 

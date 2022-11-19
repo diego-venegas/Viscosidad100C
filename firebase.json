@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "viscosidad100codelco",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
