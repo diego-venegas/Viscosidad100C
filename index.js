@@ -1,3 +1,4 @@
+const serverless = require("serverless-http");
 const express = require('express');
 
 function clearVi() {
@@ -240,6 +241,8 @@ server.get('/visc100/:vindx/:visc40', function (req, res){
     res.json({result: result});
 });
 
-server.listen(port, () => {
+/*server.listen(port, () => {
     console.log('escuchando', port)
-})
+})*/
+
+module.exports.handler = serverless(server);
