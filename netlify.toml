@@ -1,5 +1,5 @@
 [build]
-base="functions"
+base=""
 command = 'npm run build'
 functions = 'functions'
 publish = 'build'
